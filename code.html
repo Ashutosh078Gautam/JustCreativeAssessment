@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Just Creative Designs - Interior Design</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #121212;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  /* Custom scrollbar for testimonial carousel */
+  ::-webkit-scrollbar {
+    height: 8px;
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #bbb;
+    border-radius: 4px;
+  }
+  /* Accordion styles */
+  details summary::-webkit-details-marker {
+    display:none;
+  }
+  details[open] summary::after {
+    content: "−";
+    float: right;
+  }
+  summary::after {
+    content: "+";
+    float: right;
+  }
+  input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  background: #c53030;
+  border-radius: 9999px;
+  cursor: pointer;
+  margin-top: -9px;
+}
+input[type="range"]::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  background: #c53030;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+</style>
+</head>
+<body class="relative">
+
+<!-- Navbar -->
+<header class="top-0 bg-white shadow-sm z-50">
+  <nav class="container mx-auto flex items-center justify-between py-4 px-4 md:px-0">
+    <div class="flex items-center space-x-2">
+      <span><img src="asssets/jcdlogo.png" alt="JustCreativeDesigns" class="w-24 sm:w-30 md:w-30 h-auto"></span>
+    </div>
+    <ul class=" md:flex space-x-8 text-sm font-medium text-gray-700">
+      <li><a href="#" class="hover:text-red-800">Projects</a></li>
+      <li class="relative group cursor-pointer">
+        <span class="hover:text-red-800">Price Calculator</span>
+        <!-- Dropdown if needed in future -->
+      </li>
+      <li><a href="#" class="hover:text-red-800">Service</a></li>
+      <li><a href="#" class="hover:text-red-800">Material</a></li>
+      <li><a href="#" class="hover:text-red-800">About</a></li>
+      <li><a href="#" class="hover:text-red-800">Contact Us</a></li>
+    </ul>
+    <!-- Mobile menu button -->
+    <button id="mobile-menu-btn" class="md:hidden focus:outline-none" aria-label="Open menu">
+      <svg class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" 
+        stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+  </nav>
+  <div id="mobile-menu" class="hidden md:hidden px-4 pb-6 bg-white border-t border-gray-200">
+    <ul class="flex flex-col space-y-3 text-gray-700 font-medium text-base">
+      <li><a href="#" class="block hover:text-red-800">Projects</a></li>
+      <li><a href="#" class="block hover:text-red-800">Price Calculator</a></li>
+      <li><a href="#" class="block hover:text-red-800">Service</a></li>
+      <li><a href="#" class="block hover:text-red-800">Material</a></li>
+      <li><a href="#" class="block hover:text-red-800">About</a></li>
+      <li><a href="#" class="block hover:text-red-800">Contact Us</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- Hero Slider -->
+<section class="relative overflow-hidden">
+  <div id="hero-slider" class="relative w-full h-[400px] md:h-[600px]">
+    <div class="absolute inset-0 transition-opacity duration-1000 opacity-100" data-slide="0">
+      <img src="asssets/hero.png" alt="Elegant living room with large windows, luxurious seating, and classic wallpaper in a warm color palette"
+        class="w-full h-full object-cover" loading="lazy" />
+    </div>
+    </div>
+    <!-- Additional slides can be added here -->
+  </div>
+  <!-- Hero content overlay -->
+  <div class="container mx-auto py-8 md:py-10 ">
+    <h1 class="text-4xl md:text-4xl font-semibold leading-tight">Your Dream Home Starts Here</h1>
+    <p class="text-sm md:text-base mt-2 mb-4 text-gray-800">We, at Just Creative Designs, turn your house into a home with interiors that are stylish, functional, and uniquely yours.</p>
+    <div class="flex space-x-4">
+      <button class="bg-neutral-900 text-white py-2 px-4 rounded hover:bg-gray-800 transition duration-300">Book A Free Consultation Call</button>
+      <button class="border border-neutral-900 text-neutral-900 py-2 px-4 rounded hover:bg-neutral-900 hover:text-white transition duration-300">Get A free Quote</button>
+    </div>
+  </div>
+</section>
+
+<!-- Stats and Before After -->
+  <div class="flex flex-wrap justify-around py-8 mb-8 bg-gray-100 text-center">
+    <div>
+      <h2 class="text-5xl font-bold">100+</h2>
+      <p class="text-sm text-gray-600 font-semibold">Project Completed</p>
+    </div>
+    <div>
+      <h2 class="text-5xl font-bold">2L+ SF</h2>
+      <p class="text-sm text-gray-600 font-semibold">Years of crafting - Space</p>
+    </div>
+    <div>
+      <h2 class="text-5xl font-bold">4.8</h2>
+      <p class="text-sm text-gray-600 font-semibold">Rating</p>
+    </div>
+  </div>
+
+  <div class="container mx-auto py-2 md:py-4">
+  <h2 class="text-3xl md:text-3xl font-semibold leading-tight">Transforming Spaces, Changing Lives</h2>
+  <p class="text-gray-700 mb-8 max-w-xl">We Elevate ordinary areas to extraordinary spaces, that capture your vision and style.</p>
+  </div>
+
+
+  
+  <!-- Before / After slider -->
+<section class="container mx-auto px-4 py-16 max-w-5xl">
+  <div id="slider-container" class="relative w-full h-[500px] overflow-hidden rounded-lg shadow-lg border border-gray-300">
+    <!-- Before image -->
+    <img src="asssets/after.png" alt="Before" class="absolute inset-0 w-full h-full object-cover" />
+
+    <!-- After image wrapper -->
+    <div id="before-wrapper" class="absolute inset-0 overflow-hidden w-1/2">
+      <img src="asssets/before.png" alt="After" class="w-full h-full object-cover" />
+    </div>
+
+    <!-- Draggable handle -->
+    <div id="slider-handle" class="absolute top-0 bottom-0 left-1/2 w-1 cursor-ew-resize z-10">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black text-white text-xl font-bold w-12 h-12 flex items-center justify-center rounded-full shadow-md border-2 border-white">
+        &lt;  &gt;
+    </div>
+    </div>
+  </div>
+</section>
+
+<!-- Slider-->
+
+
+<!-- Tailored Design with Image -->
+<section class="container mx-auto px-4 py-10 md:py-16 max-w-7xl">
+  <h2 class="text-2xl md:text-3xl font-semibold mb-2">Tailored Design Solutions For Every Corner Of Your Home</h2>
+  <p class="text-gray-700 mb-8 max-w-3xl">From the first sketch to the final touch, our expert team ensures your vision is brought to life with beautifully-designed, functional spaces that you’ll love coming home to every day.</p>
+  <div class="rounded-xl overflow-hidden shadow-lg max-w-full max-h-[700px] mx-auto border border-gray-200">
+    <img src="asssets/tailored.png"  alt="Luxurious interior bedroom design with gold highlights, comfortable bed, elegant furniture, and stylish lighting." 
+      class="w-full h-full object-cover" />
+  </div>
+</section>
+
+
+
+<!-- Specialize strip -->
+<section class="bg-black pt-10 text-center md:text-base tracking-wide">
+  <h1 class="text-3xl md:text-3xl text-white pb-6 font-bold">We Specialize In</h1>
+  <div class="container text-xl text-gray-200 mx-auto pb-12 overflow-x-auto whitespace-nowrap max-w-7xl flex space-x-6 md:space-x-12 font-semibold ">
+    <span>Space Planning & Arrangement.</span>
+    <span>Color Consultation & Palette Selection.</span>
+    <span>Lighting Design & Installation.</span>
+    <span>Custom Furniture Design.</span>
+    <span>Custom Flooring & Wall Treatments.</span>
+  </div>
+</section>
+
+
+
+<!-- Kitchen and Wardrobe -->
+<section class="container mx-auto px-4 py-10 md:py-16 max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-8">
+  <article class="border border-gray-200 rounded-lg p-6 shadow-lg flex flex-col">
+    <img class="rounded-lg shadow mb-4 object-cover h-48 md:h-56" 
+      src="asssets/kitchen.png" 
+      alt="Bright modern kitchen interior with clean white cabinetry, marble countertops, and stylish lighting" />
+    <h3 class="text-xl font-semibold mb-2">Create the Kitchen You’ve Always Wanted</h3>
+    <p class="text-gray-700 mb-4 flex-grow">Let’s bring your vision to life with a kitchen that’s as practical as it is beautiful.</p>
+    <button class="self-start border border-gray-800 text-gray-800 py-2 px-4 rounded hover:bg-gray-100 transition">Discover more</button>
+  </article>
+  <article class="border border-gray-200 rounded-lg p-6 shadow-lg flex flex-col">
+    <img class="rounded-lg shadow mb-4 object-cover h-48 md:h-56" 
+      src="asssets/wardrobe.png" 
+      alt="Custom wardrobe design with floral sliding doors and elegant wood finish in a cozy room" />
+    <h3 class="text-xl font-semibold mb-2">Your Perfect Wardrobe, Tailored by Us</h3>
+    <p class="text-gray-700 mb-4 flex-grow">From luxurious walk-ins to sleek storage solutions, see how we can make your wardrobe dreams a reality.</p>
+    <button class="self-start border border-gray-800 text-gray-800 py-2 px-4 rounded hover:bg-gray-100 transition">Discover more</button>
+  </article>
+</section>
+
+
+<!-- Call to Action -->
+  <section class="py-12 bg-[#06140c] text-white text-center">
+    <h2 class="text-4xl text-white mb-4" >We Design Homes That Are Built To Last</h2>
+    <p class="mb-6 max-w-8xl mx-auto text-base text-gray-250">Your home deserves the best. And therefore, we source only the finest materials to ensure your home not only looks stunning but stands the test of time.</p>
+    <button class="bg-white text-black px-6 py-3 rounded hover:bg-gray-200">Find out how we do it</button>
+  </section>
+
+
+<!-- Testimonial Carousel -->
+<section class="container mx-auto px-4 py-10 md:py-16 max-w-4xl">
+  <h2 class="text-2xl md:text-3xl font-semibold mb-2 text-center">Trusted by 100+ homeowners just like you</h2>
+  <p class="text-center text-gray-700 mb-8">Don’t just take our word for it—hear from the clients whose homes we’ve transformed.</p>
+
+  <div class="relative">
+    <div id="testimonial-wrapper" class="overflow-hidden rounded-lg border border-gray-200 shadow-sm">
+      <div id="testimonial-carousel" class="flex transition-transform duration-500 ease-in-out">
+        <div class="flex-shrink-0 w-full p-6 bg-white flex flex-col md:flex-row gap-6 md:gap-8 items-center">
+          <img class="w-50 h-50 rounded-lg object-cover border border-gray-300 shadow" 
+            src="asssets/testimony.png" alt="Photo of woman standing with designer in a modern kitchen with wooden ceiling and lighting rings" />
+          <div class="text-gray-700 flex flex-col justify-center">
+            <p class="mb-4">Exceptional experience with JustCreativeDesigns! From initial consultation to final touches, they exceeded expectations. Professional, creative, and attentive team. Our space transformed beautifully, reflecting our style perfectly. Highly recommended!</p>
+            <cite class="font-semibold">Savita Belliappa</cite>
+          </div>
+        </div>
+        <!-- Add more testimonial slides if needed -->
+         <div class="flex-shrink-0 w-full p-6 bg-white flex flex-col md:flex-row gap-6 md:gap-8 items-center">
+  <img class="w-50 h-50 rounded-lg object-cover border border-gray-300 shadow" src="asssets/testimony2.jpg" alt="Client 2" />
+  <div class="text-gray-700 flex flex-col justify-center">
+    <p class="mb-4">Outstanding service and impeccable taste! From concept to execution, JustCreativeDesigns brought our vision to life with flair and professionalism. Their attention to detail and creative solutions transformed our space into a masterpiece. Highly recommended</p>
+    <cite class="font-semibold">Akhil Raj</cite>
+  </div>
+</div>
+
+<div class="flex-shrink-0 w-full p-6 bg-white flex flex-col md:flex-row gap-6 md:gap-8 items-center">
+  <img class="w-50 h-50 rounded-lg object-cover border border-gray-300 shadow" src="asssets/testimony3.jpg" alt="Client 3" />
+  <div class="text-gray-700 flex flex-col justify-center">
+    <p class="mb-4">Exceptional interior design company! From concept to execution, they brought our vision to life with professionalism and creativity. Their attention to detail transformed our space into a stunning reflection of our style. Highly recommend it!</p>
+    <cite class="font-semibold">Neha Sharma</cite>
+  </div>
+</div>
+
+      </div>
+    </div>
+    <button id="prev-testimonial" aria-label="Previous testimonial" 
+      class="absolute top-1/2 left-4 -translate-y-1/2 bg-white rounded-full p-2 shadow hover:bg-gray-100 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" 
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"
+        viewBox="0 0 24 24">
+        <path d="M15 18l-6-6 6-6"></path>
+      </svg>
+    </button>
+    <button id="next-testimonial" aria-label="Next testimonial" 
+      class="absolute top-1/2 right-4 -translate-y-1/2 bg-white rounded-full p-2 shadow hover:bg-gray-100 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" 
+        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6"
+        viewBox="0 0 24 24">
+        <path d="M9 18l6-6-6-6"></path>
+      </svg>
+    </button>
+    <div id="testimonial-dots" class="flex justify-center mt-4 space-x-2">
+      <button aria-label="Testimonial 1" class="w-3 h-3 rounded-full bg-gray-400"></button>
+      <button aria-label="Testimonial 2" class="w-3 h-3 rounded-full bg-gray-400 opacity-50"></button>
+      <button aria-label="Testimonial 3" class="w-3 h-3 rounded-full bg-gray-400 opacity-50"></button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Why Choose Section -->
+<section class="container mx-auto px-4 py-10 md:py-16 max-w-7xl">
+  <h2 class="text-2xl md:text-3xl font-semibold mb-10 text-center">Why Choose Just Creative Design?</h2>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="border rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
+      <div class="mb-4 p-4 rounded-full text-red-700 inline-block">
+        <!-- Expert Design Icon: Simple pencil drawing -->
+         <img src="asssets/expertdesignlogo.png" alt="">
+      </div>
+      <h3 class="text-lg font-semibold mb-2">Expert Design</h3>
+      <p class="text-gray-700">We bring your vision to life with creative and personalized interior design solutions, ensuring every detail is crafted to perfection.</p>
+    </div>
+    <div class="border rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
+      <div class="mb-4 p-4 rounded-full  text-red-700 inline-block">
+        <!-- Guaranteed Icon: Check circle -->
+        <img src="asssets/guaranteed logo.png" alt="">
+      </div>
+      <h3 class="text-lg font-semibold mb-2">Guaranteed</h3>
+      <p class="text-gray-700">Your satisfaction is our priority, and we won’t rest until you’re completely happy with your new space.</p>
+    </div>
+    <div class="border rounded-lg p-6 shadow-lg flex flex-col items-center text-center">
+      <div class="mb-4 p-4 rounded-full text-red-700 inline-block">
+        <!-- Delivery Icon: Clock or Truck -->
+        <img src="asssets/delivery.png" alt="">
+      </div>
+      <h3 class="text-lg font-semibold mb-2">Delivery</h3>
+      <p class="text-gray-700">We respect your time and ensure that your project is completed on schedule without compromising on quality.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- Special Call To Action -->
+<section class="bg-neutral-900 text-white py-10 text-center px-4 md:px-0">
+  <h2 class="text-xl md:text-2xl font-semibold mb-4">Ready To Bring Your Vision To Life?</h2>
+  <button class="bg-white text-neutral-900 py-2 px-6 rounded hover:bg-gray-100 transition">Book A Free Consultation Call</button>
+</section>
+
+<!-- FAQ Section -->
+<section class="container mx-auto px-4 py-10 md:py-16 max-w-4xl">
+  <h2 class="text-2xl md:text-3xl font-semibold mb-6">FAQ</h2>
+  <div class="space-y-4">
+    <details class="border rounded shadow-lg p-4">
+      <summary class="cursor-pointer font-semibold text-lg">What services do you offer?</summary>
+      <p class="mt-3 text-gray-700">We offer a wide range of interior design services, including residential interior design for living rooms, kitchens, wardrobes, bedrooms, and kids' rooms tailored to your style and needs.</p>
+    </details>
+    <details class="border rounded shadow-lg p-4">
+      <summary class="cursor-pointer font-semibold text-lg">How long does the design process take?</summary>
+      <p class="mt-3 text-gray-700">The timeframe varies depending on the project size and complexity, but we strive to deliver your project promptly while ensuring quality and attention to detail.</p>
+    </details>
+    <details class="border rounded shadow-lg p-4">
+      <summary class="cursor-pointer font-semibold text-lg">Do you offer design services for specific types of spaces?</summary>
+      <p class="mt-3 text-gray-700">Yes, we specialize in residential interior design, covering everything from living rooms and kitchens to wardrobes and more. Our services are tailored to create beautiful and functional spaces in your home.</p>
+    </details>
+    <details class="border rounded shadow-lg p-4">
+      <summary class="cursor-pointer font-semibold text-lg">How do I get started with my project?</summary>
+      <p class="mt-3 text-gray-700">Start by reaching out to us for a free consultation call. We will discuss your vision and requirements, then create a customized plan to bring your dream home to life.</p>
+    </details>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-white border-t border-gray-300 mt-16">
+  <div class="container mx-auto px-4 py-10 max-w-7xl text-sm grid grid-cols-1 md:grid-cols-5 gap-8 text-gray-700 text-sm">
+    <div class="flex flex-col space-y-4">
+      <div class="flex items-center space-x-2">
+      <span><img src="asssets/jcdlogo.png" alt="JustCreativeDesigns" class="w-24 sm:w-30 md:w-30 h-auto"></span>
+      </div>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Shop By</h4>
+      <ul class="space-y-1 text-gray-500">
+        <li><a href="#" class="hover:text-red-700">Wardrobe</a></li>
+        <li><a href="#" class="hover:text-red-700">Kitchen</a></li>
+        <li><a href="#" class="hover:text-red-700">Kids</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Company</h4>
+      <ul class="space-y-1 text-gray-500">
+        <li><a href="#" class="hover:text-red-700">About us</a></li>
+        <li><a href="#" class="hover:text-red-700">Portfolio</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Get Help</h4>
+      <ul class="space-y-1 text-gray-500">
+        <li><a href="#" class="hover:text-red-700">FAQ</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="font-semibold mb-2">Contact Us</h4>
+      <ul class="space-y-1 text-gray-500">
+        <li><a href="#" class="hover:text-red-700">info@justcreativedesigns.in</a></li>
+        <li><a href="#" class="hover:text-red-700">+91- 8884456466</a></li>
+        <li><a href="#" class="hover:text-red-700">Instagram</a></li>
+    </div>
+  </div>
+</footer>
+<footer class="border-t border-gray-300 py-2"><p class="font-semibold text-center">© Copyright 2025 JustCreateDesign — All Rights Reserved.</p></footer>
+
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  mobileMenuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  // Before / After slider logic
+  const sliderContainer = document.getElementById('slider-container');
+  const beforeWrapper = document.getElementById('before-wrapper');
+  const sliderHandle = document.getElementById('slider-handle');
+
+  let isDragging = false;
+
+  sliderHandle.addEventListener('mousedown', () => isDragging = true);
+  sliderHandle.addEventListener('touchstart', () => isDragging = true);
+
+  document.addEventListener('mouseup', () => isDragging = false);
+  document.addEventListener('touchend', () => isDragging = false);
+
+  document.addEventListener('mousemove', (e) => {
+    if (!isDragging) return;
+    moveSlider(e.pageX);
+  });
+
+  document.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+    moveSlider(e.touches[0].pageX);
+  });
+
+  function moveSlider(x) {
+    const rect = sliderContainer.getBoundingClientRect();
+    let offsetX = x - rect.left;
+
+    if (offsetX < 0) offsetX = 0;
+    if (offsetX > rect.width) offsetX = rect.width;
+
+    const percent = (offsetX / rect.width) * 100;
+    beforeWrapper.style.width = `${percent}%`;
+    sliderHandle.style.left = `${percent}%`;
+  }
+
+
+  // Testimonial carousel (for now supporting 3 dummy slides)
+  const carousel = document.getElementById('testimonial-carousel');
+  const prevBtn = document.getElementById('prev-testimonial');
+  const nextBtn = document.getElementById('next-testimonial');
+  const dots = document.querySelectorAll('#testimonial-dots button');
+
+  let currentTestimonial = 0;
+  const totalTestimonials = carousel.children.length;
+
+  function updateCarousel(index) {
+    currentTestimonial = index;
+    carousel.style.transform = `translateX(-${index*100}%)`;
+    dots.forEach((dot, i) => {
+      if(i === index) {
+        dot.classList.add('bg-gray-700');
+        dot.classList.remove('opacity-50');
+      } else {
+        dot.classList.remove('bg-gray-700');
+        dot.classList.add('opacity-50');
+      }
+    });
+  }
+
+  prevBtn.addEventListener('click', () => {
+    let newIndex = currentTestimonial - 1;
+    if(newIndex < 0) newIndex = totalTestimonials-1;
+    updateCarousel(newIndex);
+  });
+
+  nextBtn.addEventListener('click', () => {
+    let newIndex = currentTestimonial + 1;
+    if(newIndex >= totalTestimonials) newIndex = 0;
+    updateCarousel(newIndex);
+  });
+
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      updateCarousel(i);
+    });
+  });
+
+  updateCarousel(0);
+  });
+</script>
+
+</body>
+</html>
+
