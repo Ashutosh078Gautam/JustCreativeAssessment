@@ -16,7 +16,6 @@ This is a responsive HTML and CSS implementation of a design provided via Figma,
 - CSS3
 - Media Queries for responsiveness
 
----
 
 
 👤 Developed by Ashutosh Gautam
